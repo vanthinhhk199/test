@@ -1,0 +1,132 @@
+/* Mobile" width < 768px */
+@media only screen and (max-width: 767px) {
+    #nav{
+        display: block;
+    }
+
+    #nav > li {
+        display: block;
+    }
+    #nav > li:first-child{ /* lấy thằng đầu tiên mấy thằng dưới ko dính */
+        display: inline-block;
+    }
+    #nav .subnav{
+        position: initial; /* trở về giá trị mặc định*/
+        background-color: rgb(34, 34, 34);
+    }
+    #nav .subnav a{
+        padding: 0 50px;
+        color: #fff;
+    }
+    #header{
+        overflow: hidden; /* ẩn đi thằng con*/
+    }
+    .header-search{
+        display: none;
+    }
+    #sum-ticket {
+        display: grid;
+    }
+    #content .box-user {
+        display: grid;
+    }
+    .mobile-menu-btn{
+        float: right;
+        line-height: 46px;
+        color: #ccc;
+        font-size: 15px;
+        padding: 0 24px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #header .mobile-menu-btn:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    #content .text-content{
+        padding: 15px;
+    }
+    #content .box-user .box-ser1{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #content .box-img{
+        width: 60%;
+    }
+    #sum-ticket .ticket1{
+        width: 98%;
+        margin-bottom: 16px;
+        
+    }
+    #sum-ticket .ticket1 .buy-ticket-btn{
+        border: none;
+    }
+    .contact-content{
+        padding: 0;
+        height: auto;
+
+    }
+    .contact-0{
+        display: grid;
+        height: auto;
+    }
+    #contact0{
+        padding: 64px 16px;
+    }
+    .contact-content-1,
+    .contact-content-2,
+    .contact-ip-1 .ip-1{
+        width: 100%;
+    }
+    .contact-ip-1 .ip-1{
+        margin-top: 4px;
+    }
+    .contact-ip-2 {
+        padding: 4px 0px 0 0;
+    }
+    .contact-ip-1{
+        padding-top: 15px;
+    }
+    #content .dau3{
+        text-align: ;
+    }
+
+}
+
+/* Tablet" width >= 768px and minwidth < 1024px*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #header{
+        z-index: 1;
+    }
+    .dau3,
+    .slv{
+       padding: 0 10px; 
+    }
+    #sum-ticket{
+        width: auto;
+        padding: 0 3px; 
+    }
+    .contact-ip-1{
+        display: flex;
+
+    }
+    .contact-ip-1 .ip-1{
+        width: 50%;
+        margin-right: 5px;
+    }
+    .contact-ip-2 {
+        padding: 4px 5px 0 0
+    }
+    #mobile-menu{
+        display: none;
+    }
+}
+/* Tablet" width >= 768px and minwidth < 1024px*/
+@media only screen and (min-width: 1024px){
+    
+    #mobile-menu{
+        display: none;
+    }
+}

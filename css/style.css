@@ -1,0 +1,451 @@
+
+/* Reset CSS */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.clear{
+    clear: both; /*để cha box-user ôm các img con ở dưới ko bị tách ra*/
+}
+.text-white{ /* dùng để thay đổi tách ra gì đó mà ko cần phụ thuộc vào nhờ vào impotant*/
+    color: #fff !important; /* important độ ưu tiên cao nhất */
+}
+.text-white1{
+    color: #000 !important;
+}
+#main{
+    max-width: 100%;
+}
+
+#header{
+    background-color: black;
+    
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* minh lăn chuột thì ảnh che mất phần header
+     vì thêm positon nên nó sẽ bị nổi lên thêm này vào để để đc ưu tiên */
+}
+#nav{
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style-type: none; /* Bỏ chấm trước các thẻ UL */
+
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav > li:hover > a,
+#nav  .subnav li:hover a{
+    background-color: #ccc;
+    color: #000;
+    }
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase; /* Viết hoa các chữ thẻ cha*/
+}
+#nav li{
+     /* các items sẽ được xếp cùng nhau trên một dòng*/ 
+    position: relative;
+    
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav{
+    display: none; /* ẩn nội dung*/
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    top: 100%;
+    left: 0;
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 10px 20px;
+    line-height: 38px;
+}
+
+#nav li a{
+    line-height: 46px;  /* tăng chiều cao của chữ để chữ đc nằm giữa      */
+    text-decoration: none; /* bỏ gạch chân của chữ */
+    padding: 0 24px;
+    display: block;
+}
+#nav .nav-icon{
+    font-size: 12px;
+}
+.header-search{
+    float: right;
+    line-height: 46px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#header .header-search:hover{
+    background-color: #f44336;
+    cursor: pointer; /* để chuột vào chổ nhấn đc sẽ biến thành bàn tay */
+}
+
+.search-icon{
+    color: #fff;
+    font-size: 15px;
+    padding: 0 24px;
+}
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background:url("/slider/chicago.jpg") top center / cover no-repeat ;
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider .text-desription{
+    margin-top: 25px;
+    font-size: 15px;
+}
+#content{
+    background-color: #fff;
+    
+}
+#content .text-content{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+}
+#content .dau1{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px; /* khoang cach moi chu*/
+}
+#content .dau2{
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: center;
+    font-style: italic; /*chu nghieng*/
+    opacity: 0.8; /* chu mo di*/
+}
+#content .dau3{
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;/* can deu 2 ben chu */
+    line-height: 1.6;
+}
+
+#content .box-user{
+    margin-top: 48px;
+    
+}
+#content .box-user .box-ser1{
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+#content .tour{
+    background-color: #000;
+
+}
+.tour .slv{
+    margin-top: 40px;
+
+}
+.tour .slv li{
+    background-color: #fff;
+    border-bottom: 1px solid #757575;
+    list-style-type: none;
+    display: list-item;
+    height: 39px;
+    padding: 8px 16px;
+    font-size: 15px;
+    color: #757575;
+}
+.slv li span{
+    
+    
+}
+.Soldout{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin: 0 0 0 16px;
+}
+.tour .slv .sove{
+    height: 18px;
+    width: 18px;
+    float: right;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+#sum-ticket{
+    max-width: 100%;
+    width: 800px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#sum-ticket .ticket1{
+    float: left;
+    width: 33.33333%;
+    font-size: 15px;
+    margin: 0 0 16px;
+    padding: 0 8px;
+    margin-bottom: 120px;
+
+    
+}
+#sum-ticket .ticket1 .ticket1-content{
+    background-color: #fff;
+    padding: 0.15px 16px;
+    height: 179px;
+}
+#sum-ticket .ticket1 .td-ticket{
+    margin: 15px 0;
+}
+#sum-ticket .ticket1 .nt-ticket{
+    margin: 15px 0;
+    opacity: 0.8;
+}
+#sum-ticket .ticket1 .mt-ticket{
+    margin: 15px 0;
+}
+#sum-ticket .ticket1 .buy-img1{
+    width: 100%;
+    display: block;
+}
+#sum-ticket .ticket1 .buy-img1:hover{
+    opacity: 0.4;
+}
+#sum-ticket .ticket1 .buy-ticket-btn{
+    height: 38px;
+    width: 107px;
+    background-color: #000;
+    color: #fff;
+    margin: 0 0 16px;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    
+}
+#sum-ticket .ticket1 .buy-ticket-btn:hover{
+    opacity: 0.6;
+}
+#content .name {
+    
+    font-size: 15px;
+}
+#content .box-img{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+   
+    
+}
+.contact{
+    
+    
+}
+.contact-content{
+    margin-left: auto;
+    margin-right: auto;
+    height: 457px;
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px;
+   
+
+    
+}
+.contact-0{
+    width: 768px;
+    height: 222px;
+    max-width: 100%;
+    font-size: 15px;
+    padding: 32px 0;
+}
+.contact-content-1{
+    width: 50%;
+    float: left;
+}
+.contact-content-1 i{
+    padding: 10px;
+
+}
+.contact-content-1 p{  
+    line-height: 1.5;
+    font-size: 18px;
+
+}
+.contact-content-2{
+    width: 50%;
+    float: right;
+}
+.contact-ip-1 .ip-1{
+    
+    padding: 8px;
+    width: 184px;
+    line-height: 22.5px;
+    font-size: 15px;
+    border: 1px solid #ccc!important;
+}
+.contact-ip-1 {
+   
+
+}
+.contact-ip-2 {
+    padding: 4px 11px 0 0;
+    
+
+}
+.contact-ip-2 .ip-2{
+    width: 100%; 
+    padding: 8px;
+    line-height: 22.5px;
+    border: 1px solid #ccc!important;
+}
+.contact-btn .contact-btn-1{
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    line-height: 22.5px;
+    padding: 8px 16px;
+    text-align: center;
+    margin: 16px 11px;
+    float: right;
+    border-style: none;
+    cursor: pointer;
+}
+.contact-btn-1:hover{
+    background-color: #9b9696;
+    color: #000;
+}
+
+#footer{
+    text-align: center;
+    background-color: #f1f1f1;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 64px 16px;
+}
+#footer i{
+    display: inline-block;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+#footer i,a:hover{
+    color: #757575;
+}
+#footer p,a{
+    color: #9b9696;
+    font-size: 15px;
+}
+.modal.open{
+    display: flex;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    align-items: center; /*cho popup xuong dưới và ở giữa bên trái */
+    justify-content: center; /*cho popup xuong dưới và ở giữa */
+    
+}
+.modal .modal-popup{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px ;
+    position: relative;
+    animation: modalFadeIn ease 0.3s; /* ease cho nó kiểu để chạy trên xuống  */
+}
+.modal .modal-popup .head-popup{
+    height: 129px;
+    background: #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    
+}
+.modal .modal-popup .close-btn{
+    position: absolute;
+    color: #fff;
+    padding: 15px 15px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.modal .modal-popup .close-btn:hover{
+    background-color: #dbd7d7;
+    color: #000;
+    
+}
+
+.modal .content-popup .content-inp1-popup, .content-inp2-popup{
+    display: block;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+}
+.modal .content-popup .content-lab1, .content-lab2{
+    margin: 15px 0;
+
+}
+#buyticket{
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #009688;
+    border: none;
+    cursor: pointer;
+}
+#buyticket:hover{
+    opacity: 0.7;
+}
+
+@keyframes modalFadeIn {   /* tạo cho popup kích vào chạy từ trên xuống */
+    from { /* vị tí bắt đầu */
+        transform:translateY(-1000px) ; 
+    }
+    to{ /* vị tí đứng lại */
+        transform: translateY(0);
+    }
+}
+
+
