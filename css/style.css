@@ -109,7 +109,7 @@ html{
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background:url("/slider/chicago.jpg") top center / cover no-repeat ;
+    background:url("../slider/chicago.jpg") top center / cover no-repeat ;
 }
 #slider .text-content{
     position: absolute;
@@ -117,6 +117,7 @@ html{
     color: #fff;
     width: 100%;
     text-align: center;
+    text-shadow: 0 0 1px #000;
 }
 #slider .text-heading{
     font-weight: 500;
